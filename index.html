@@ -1,23 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Vertical | Horizontal menus</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Building Basic Side Menu - Swipeable Side Menu</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
-    <div>
-        <nav>
+    <div class="container">
+        <div id="sidebar">
             <ul>
-                <li class="nav-items"><a href="login.html">Log In</a>
-                </li>
-                <li class="nav-items"><a href="shopping_cart.html">Cart</a>
-                </li>
-                <li class="nav-items"><a href="catalog.html">Catalog</a>
-                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Sign Out</a></li>
             </ul>
-        </nav>
+        </div>
+        <div class="main-content">
+            <a href="#" data-toggle=".container" id="sidebar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="content">
+                <h1>Creating Swipeable Side Menu For the Web</h1>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
     </div>
 </body>
 
